@@ -15,10 +15,10 @@ for step in range(num_steps):
     t[step+1] = t[step] + h
     euler[step+1] = euler[step] + euler[step] *  h
 
-    leftheun = heun[step] + heun[step] * h
-    rightheun = (heun[step] +h )+(heun[step] +h)* h
+    leftheun = heun[step]
+    rightheun = heun[step] +h
 
-    heun[step+1] = heun[step] + (h/2) * (leftheun + rightheun)
+    heun[step+1] = heun[step] + h* (leftheun + rightheun)/2
     # https://image.slidesharecdn.com/nmfirstsecond-180726082016/95/heuns-method-5-638.jpg?cb=1532593353
 
 

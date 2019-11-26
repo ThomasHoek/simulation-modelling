@@ -50,11 +50,6 @@ for step in range(num_steps):       #  6 in, 5 uit.
 
 
 
-    
-    
-    
-
-
 zoutPerVolume = [i / j for i, j in zip(zout2, volume2list)] 
 zoutPerVolume2 = [i / j for i, j in zip(zout4, volume3list)] 
 
