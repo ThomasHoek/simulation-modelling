@@ -2,7 +2,7 @@ import numpy
 import matplotlib.pyplot as plt
 
 
-num_steps = 10
+num_steps = 15
 h = 1/num_steps
 
 t = numpy.zeros(num_steps+1) # time
@@ -24,6 +24,7 @@ for step in range(num_steps):
 
 print(euler[-1])
 print(heun[-1])
-plt.plot(t,euler)
-plt.plot(t,heun)
+plt.plot(t,euler,label="Euler")
+plt.plot(t,heun,label="Heun")
+plt.legend()
 plt.show()

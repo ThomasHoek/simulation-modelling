@@ -45,11 +45,11 @@ for step in range(num_steps):
     R[step+1] = R[step] + i2r
 
 
-plt.plot(S)
-plt.plot(E)
-plt.plot(I)
-plt.plot(R)
-
+plt.plot(S,label = "Gezond")
+plt.plot(E,label = "Blootgesteld")
+plt.plot(I,label = "Infecteerd")
+plt.plot(R,label = "Imuun")
+plt.legend()
 
 plt.show()
 
