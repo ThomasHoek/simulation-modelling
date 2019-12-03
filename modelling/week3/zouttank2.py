@@ -22,7 +22,7 @@ zout_tank2[0] = 20
 
 
 for step in range(num_steps):
-    h = 0.2 * i_tank1
+    
     t[step+1] = t[step] + 1
 
     in_tank1 = 0.2 * i_tank1
@@ -37,7 +37,7 @@ for step in range(num_steps):
     
     
 
-print(zout_tank1[-1]/(volume *2 ))
-plt.plot(zout_tank1/volume)
-plt.plot(zout_tank2/volume)
+print(zout_tank1[-1]/volume)
+plt.plot(t,zout_tank1/volume)
+plt.plot(t,zout_tank2/volume)
 plt.show()
