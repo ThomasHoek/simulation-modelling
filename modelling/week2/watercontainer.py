@@ -25,7 +25,8 @@ for step in range(num_steps):       # 6 in, 6 uit
 
     a = h
     b = 1 / volume * out_water
-    zout3[step+1] = zout3[step] + (a - b * zout3[step]) * h
+    zout3[step+1] = zout3[step] + (a - b * zout3[step])
+    
 
 
 volume2 = volume
@@ -43,7 +44,9 @@ for step in range(num_steps):       #  6 in, 5 uit.
 
     a = h
     b = 1 / volume3 * out_water2 
-    zout4[step+1] = zout4[step] + (a - b * zout4[step]) * h
+    zout4[step+1] = zout4[step] + (a - b * zout4[step])
+
+    
     
     volume3 = volume3 + (in_water - out_water2)
     volume3list.append(volume3)
