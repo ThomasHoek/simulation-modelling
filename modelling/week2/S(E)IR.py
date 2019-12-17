@@ -53,7 +53,6 @@ plt.legend()
 
 plt.show()
 
-print(S)
 # standarsized_infection_ratio = actual_number_of_infections / predicted_number_of_infections
 
 
