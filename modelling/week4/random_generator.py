@@ -41,9 +41,9 @@ def plot():
     plt.hist(return_lst, bins=100000)
     plt.show()
 
-
-pi = monte_carlo_pi()
-print("Difference is: " , abs(math.pi - pi))
-print("Calculated pi:", pi)
+def run():
+    pi = monte_carlo_pi()
+    print("Difference is: " , abs(math.pi - pi))
+    print("Calculated pi:", pi)
 
 # plot()

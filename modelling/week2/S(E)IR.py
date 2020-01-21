@@ -7,12 +7,12 @@ population = 86 * (10 **7)
 contacts = 70
 infection_chance = 3
 
-percentage_vaccinated = 45
+percentage_vaccinated = 0
 vaccinated = population / 100 * percentage_vaccinated
 transmission_cooef = contacts * (1/population) * (1/infection_chance)
 
 
-latency_time = 2           # tijd van gezong naar infecteerd
+latency_time = 2           # tijd van gezond naar infecteerd
 infection_time = 6          # tijd om van geinfecteerd naar imuun te gaan
 
 num_steps = 500
